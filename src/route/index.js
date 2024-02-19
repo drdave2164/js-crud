@@ -5,21 +5,41 @@ const router = express.Router()
 
 // ================================================================
 
-// router.get Створює нам один ентпоїнт
-
-// ↙️ тут вводимо шлях (PATH) до сторінки
 router.get('/', function (req, res) {
-  // res.render генерує нам HTML сторінку
-
-  // ↙️ cюди вводимо назву файлу з сontainer
   res.render('index', {
-    // вказуємо назву папки контейнера, в якій знаходяться наші стилі
     style: 'index',
   })
-  // ↑↑ сюди вводимо JSON дані
+})
+
+// ================================================================
+// ================================================================
+router.get('/product-create', function (req, res) {
+  res.render('product-create', {
+    style: 'product-create',
+  })
 })
 
 // ================================================================
 
+class Product {
+  constructor(name, price, description) {
+    this.name = name
+    this.price = price
+    this.description = description
+  }
+
+  static create = (product) => {}
+}
+
+// ================================================================
+
+router.post('/product-create', function (req, res) {
+  console.log(req.body)
+  res.render('product-create', {
+    style: 'product-create',
+  })
+})
+
+// ================================================================
 // Підключаємо роутер до бек-енду
 module.exports = router
