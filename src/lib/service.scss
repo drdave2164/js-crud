@@ -3,3 +3,6 @@
 
 @use './var.scss';
 @forward './var.scss';
+
+@use './size.scss';
+@forward './size.scss';
