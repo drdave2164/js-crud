@@ -1,0 +1,106 @@
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color: blue;
+  margin-bottom: 32px;
+  margin-left: 8px;
+  padding: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin: 16px;
+  gap: 32px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 100%;
+  max-width: fit-content;
+  min-width: 720px;
+}
+.card__title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+.card__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 8px;
+}
+.card__field {
+  display: grid;
+}
+.card__input {
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 4px;
+}
+.card__description {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.card__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.form__label {
+  font-size: 16px;
+  color: #1d1d1d;
+  margin-left: 8px;
+  padding-bottom: 8px;
+}
+
+.card__textarea {
+  min-height: 80px;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.form__info {
+  font-size: 14px;
+  margin-left: 8px;
+  color: #606060;
+}
+
+.button {
+  text-align: center;
+  width: 100%;
+  border: 1px solid rgb(159, 159, 159);
+  border-radius: 4px;
+  color: white;
+}
+.button__add {
+  border: 1px solid blue;
+  background-color: blue;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 8px;
+  text-decoration: none;
+}
+.button__del {
+  border: 1px solid red;
+  background-color: red;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
