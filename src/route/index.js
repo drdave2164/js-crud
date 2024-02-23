@@ -150,18 +150,25 @@ class Product {
     }
   }
 
-  static updateById = (id, data) => {
-    const product = this.getById(id)
-
-    if (product) {
-      if (data.name) {
-        product.name = data.name
+  static updateById = (
+    id,
+    { name, price, description, createDate },
+  ) => {
+    const index = this.#list.findIndex(
+      (product) => product.id === id,
+    )
+    if (index !== -1) {
+      if (name) {
+        this.#list[index].name = name
       }
-      if (data.price) {
-        product.price = data.price
+      if (price) {
+        this.#list[index].price = price
       }
-      if (data.description) {
-        product.description = data.description
+      if (description) {
+        this.#list[index].description = description
+      }
+      if (createDate) {
+        this.#list[index].createDate = createDate
       }
       return true
     } else {
@@ -265,9 +272,14 @@ router.get('/product-create', function (req, res) {
 // ================================================================
 
 router.post('/product-create', function (req, res) {
-  const { name, price, description } = req.body
+  const { name, price, description, createDate } = req.body
 
-  const product = new Product(name, price, description)
+  const product = new Product(
+    name,
+    price,
+    description,
+    createDate,
+  )
 
   let result = false
   result = Product.add(product)
@@ -332,17 +344,17 @@ router.get('/product-edit', function (req, res) {
 // ================================================================
 
 router.post('/product-edit', function (req, res) {
-  const { name, price, description, id } = req.body
+  const { name, price, description, createDate, id } =
+    req.body
 
-  let result = false
-
-  result = Product.updateById(id, {
+  const result = Product.updateById(Number(id), {
     name,
     price,
     description,
+    createDate,
   })
 
-  console.log(result)
+  //   console.log(result)
 
   res.render('alert', {
     style: 'alert',

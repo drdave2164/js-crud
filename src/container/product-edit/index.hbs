@@ -1,34 +1,36 @@
 <main class="main">
 	<section>
 		<h1 class="title">Редагування товару</h1>
-		<form method="post" action="product-edit"></form>
-		<div class="card">
-			<div class="card__title">
-				<h4>Інформація про товар</h4>
-			</div>
-			<div class="card__content">
-				<div class="card__field">
-					<label for="name" class="form__label">Назва товару</label>
-					<input type="text" name="name" class="card__input" required>
+		<form method="POST" action="/product-edit">
+			<div class="card">
+				<div class="card__title">
+					<h4>Інформація про товар</h4>
 				</div>
-				<div class="card__field">
-					<label for="price" class="form__label">Ціна</label>
-					<input type="text" name="price" class="card__input" required>
+				<div class="card__content">
+					<div class="card__field">
+						<label for="name" class="form__label">Назва товару</label>
+						<input type="text" name="name" value="{{name}}" class="card__input">
+					</div>
+					<div class="card__field">
+						<label for="price" class="form__label">Ціна</label>
+						<input type="text" name="price" value="{{price}}" class="card__input">
+					</div>
+					<div class="card__field">
+						<label for="id" class="form__label">ID:</label>
+						<input type="text" name="id" value="{{id}}" class="card__input" required>
+					</div>
 				</div>
-				<div class="card__field">
-					<label for="id" class="form__label">ID</label>
-					<input type="text" name="id" class="card__input" required>
+				<div class="card__description">
+					<label for="description" class="form__label">Короткий опис товару</label>
+					<textarea type="text" name="description" class="card__input card__textarea"
+						id="description">{{description}}</textarea>
+					<span class="form__info">Відображується у картці товару</span>
+				</div>
+				<div class="card__buttons">
+					<button class="button button__add"> Зберегти оновлення </button>
+					<a href="/product-delete?id={{id}}" class="button button__del"> Видалити товар </a>
 				</div>
 			</div>
-			<div class="card__description">
-				<label for="description" class="form__label">Короткий опис товару</label>
-				<textarea type="text" name="description" class="card__input card__textarea" id="description"></textarea>
-				<span class="form__info">Відображується у картці товару</span>
-			</div>
-			<div class="card__buttons">
-				<a href="/product-edit" class="button button__add"> Зберегти оновлення </a>
-				<a href="/product-delete?id={{id}}" class="button button__del"> Видалити товар </a>
-			</div>
-		</div>
+		</form>
 	</section>
 </main>

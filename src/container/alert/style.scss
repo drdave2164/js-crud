@@ -45,7 +45,7 @@
   }
 
   &__info {
-    font-size: 14px;
+    font-size: s.size(7);
     margin-left: s.space(2);
     color: s.color(medium_light);
   }
@@ -56,7 +56,7 @@
     color: s.color(white);
     background-color: s.color(prymary);
     font-weight: 300;
-    font-size: 14px;
+    font-size: s.size(7);
     padding: 8px;
     text-decoration: none;
     min-width: max-content;

@@ -61,6 +61,11 @@
     padding-bottom: s.space(2);
   }
 
+  &__date {
+    font-size: s.size(5);
+    color: s.color(dark_light);
+  }
+
   &__footer {
     display: flex;
     justify-content: space-between;
