@@ -8,7 +8,7 @@
 }
 
 .title {
-  font-size: 40px;
+  font-size: s.size(20);
   font-weight: bold;
   color: s.color(prymary);
   margin-bottom: s.space(8);
@@ -30,7 +30,7 @@
   min-width: 720px;
 
   &__title {
-    font-size: 28px;
+    font-size: s.size(14);
     font-weight: bold;
     margin-left: s.space(2);
   }
@@ -67,7 +67,7 @@
 }
 
 .form__label {
-  font-size: 16px;
+  font-size: s.size(8);
   color: s.color(dark_light);
   margin-left: s.space(2);
   padding-bottom: s.space(2);
@@ -82,7 +82,7 @@
 }
 
 .form__info {
-  font-size: 14px;
+  font-size: s.size(7);
   margin-left: s.space(2);
   color: s.color(medium_light);
 }
@@ -98,7 +98,7 @@
     border: 1px solid s.color(prymary);
     background-color: s.color(prymary);
     font-weight: 300;
-    font-size: 14px;
+    font-size: s.size(7);
     padding: 8px;
     text-decoration: none;
   }
@@ -107,8 +107,12 @@
     border: 1px solid s.color(warning);
     background-color: s.color(warning);
     font-weight: 300;
-    font-size: 14px;
+    font-size: s.size(7);
     padding: 8px;
     text-decoration: none;
   }
+}
+
+.button:hover {
+  opacity: 0.8;
 }

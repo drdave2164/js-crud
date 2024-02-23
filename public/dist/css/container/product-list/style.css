@@ -56,6 +56,10 @@
   color: rgb(159, 159, 159);
   padding-bottom: 8px;
 }
+.card__date {
+  font-size: 10px;
+  color: #1d1d1d;
+}
 .card__footer {
   display: flex;
   justify-content: space-between;
