@@ -1,0 +1,76 @@
+<main class="main">
+	{{#with data}}
+	<form method="POST" action="/purchase-edit?id={{id}}" class="form-card">
+
+		{{> heading title="Інформація про замовлення"}}
+
+		<div class="field__id">
+			<div class="title">ID:</div>
+			<div>{{id}}</div>
+		</div>
+
+		{{> divider}}
+
+		<div class="field__position">
+
+			<div class="field">
+				<div class="title">Ім'я:</div>
+				<div>{{firstname}}</div>
+			</div>
+			<div class="field">
+				<div class="title">Призвіще:</div>
+				<div>{{lastname}}</div>
+			</div>
+			<div class="field">
+				<div class="title">Мобільний телефон:</div>
+				<div>{{phone}}</div>
+			</div>
+			<div class="field">
+				<div class="title">Електронна пошта:</div>
+				<div>{{email}}</div>
+			</div>
+
+		</div>
+
+		{{> divider}}
+
+		<div class="box">
+			<div class="field">
+				<div class="title">Назва товару:</div>
+				<div>{{product}}</div>
+			</div>
+			<div class="field">
+				<div class="title">Коментар:</div>
+				<div>{{comment}}</div>
+			</div>
+		</div>
+
+		{{> divider}}
+
+		<div class="field__position">
+
+			<div class="field">
+				<div class="title">Вартість товарів:</div>
+				<div>{{productPrice}} ₴</div>
+			</div>
+			<div class="field">
+				<div class="title">Вартість доставки:</div>
+				<div>{{deliveryPrice}} ₴</div>
+			</div>
+			<div class="field">
+				<div class="title">Сума до сплати:</div>
+				<div>{{totalPrice}} ₴</div>
+			</div>
+			<div class="field">
+				<div class="title">Нараховані бонуси:</div>
+				<div>{{bonus}} ₴</div>
+			</div>
+
+		</div>
+
+		{{> divider}}
+		{{> button text='Змінити дані'}}
+
+	</form>
+	{{/with}}
+</main>

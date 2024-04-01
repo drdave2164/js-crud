@@ -813,13 +813,13 @@ textarea {
   resize: none;
 }
 
-textarea {
+/* textarea {
   resize: vertical;
 }
 
 textarea {
   resize: horizontal;
-}
+} */
 
 button:active,
 button:focus {

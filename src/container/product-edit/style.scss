@@ -10,7 +10,7 @@
 .title {
   font-size: s.size(20);
   font-weight: bold;
-  color: s.color(prymary);
+  color: s.color(primary);
   margin-bottom: s.space(8);
   margin-left: s.space(2);
   padding: s.space(4);
@@ -95,8 +95,8 @@
   color: s.color(white);
 
   &__add {
-    border: 1px solid s.color(prymary);
-    background-color: s.color(prymary);
+    border: 1px solid s.color(primary);
+    background-color: s.color(primary);
     font-weight: 300;
     font-size: s.size(7);
     padding: 8px;
