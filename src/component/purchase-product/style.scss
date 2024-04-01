@@ -1,0 +1,70 @@
+@use '../../lib/service.scss' as s;
+@use '../../component/button/style.scss' as button;
+
+.product-card {
+  border-radius: 10px;
+  border: 1px solid s.color(border);
+  padding: s.space(4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: s.space(3);
+  width: 100%;
+  max-width: 320px;
+}
+
+.product-card__image {
+  max-height: 300px;
+  width: 100%;
+}
+
+.product-card__title {
+  font-size: s.size(10);
+  font-weight: bold;
+}
+
+.product-card__subtitle {
+  font-size: s.size(8);
+  color: s.color(dark_light);
+}
+
+.product-card__category {
+  padding: s.space(1) s.space(3);
+  border-radius: 30px;
+  font-size: 14px;
+  color: s.color(dark_light);
+  border: 1px solid transparent;
+}
+
+.product-card__category--1 {
+  border-color: blue;
+  color: blue;
+}
+
+.product-card__category--2 {
+  border-color: green;
+  color: green;
+}
+
+.button {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: stretch;
+  width: 100%;
+  max-width: fit-content;
+  min-width: max-content;
+}
+//   background-color: s.color(primary);
+//   color: s.color(white);
+//   border: none;
+//   border-radius: 5px;
+//   padding: s.space(2) s.space(5);
+//   font-size: 16px;
+//   transition: opacity 0.3s ease;
+//   text-decoration: none;
+//   text-align: center;
+
+//   &:hover {
+//     opacity: 0.7;
+//   }
+// }

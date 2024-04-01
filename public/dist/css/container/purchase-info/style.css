@@ -1,0 +1,162 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heading__title {
+  font-size: 32px;
+  color: #000;
+}
+
+.heading__info {
+  font-size: 24px;
+  color: #000;
+}
+
+.button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 20px;
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+}
+.button:hover {
+  opacity: 0.7;
+}
+
+.product-card {
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.product-card__image {
+  max-height: 300px;
+  width: 100%;
+}
+
+.product-card__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-card__subtitle {
+  font-size: 16px;
+  color: #1d1d1d;
+}
+
+.product-card__category {
+  padding: 4px 12px;
+  border-radius: 30px;
+  font-size: 14px;
+  color: #1d1d1d;
+  border: 1px solid transparent;
+}
+
+.product-card__category--1 {
+  border-color: blue;
+  color: blue;
+}
+
+.product-card__category--2 {
+  border-color: green;
+  color: green;
+}
+
+.button {
+  width: 100%;
+  max-width: fit-content;
+  min-width: max-content;
+}
+
+.product-info__divider {
+  width: 100%;
+  height: 1px;
+  background: #ced4da;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.field__label {
+  font-size: 14px;
+}
+
+.field__input {
+  border: 1px solid #606060;
+  padding: 8px;
+}
+
+.field--disabled {
+  position: absolute;
+  display: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1080px;
+  min-width: 600px;
+  gap: 40px;
+  padding: 40px;
+}
+
+.form-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 24px;
+}
+
+.heading__title {
+  color: #0d6efd;
+  padding-bottom: 40px;
+}
+
+.field__position {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 16px;
+}
+
+.field__id {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.box {
+  display: grid;
+  gap: 16px;
+}
+
+.title {
+  color: #606060;
+}
+
+.button {
+  max-width: none;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -45,10 +45,9 @@
   color: #606060;
 }
 .form__button {
-  border: 1px solid blue;
+  border: 1px solid;
   border-radius: 4px;
   color: white;
-  background-color: blue;
   font-weight: 300;
   font-size: 14px;
   padding: 8px;
